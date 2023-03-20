@@ -47,7 +47,7 @@
       {{#if hasThumbnail}}
         {{raw "list/topic-thumbnail" topic=topic thumbnails=thumbnails category=category opts=thumbnailOpts}}
       {{else}}
-        <a href="{{topic.lastPostUrl}}" data-user-card="{{topic.last_poster_username}}">{{avatar topic.lastPosterUser imageSize="large"}}</a>
+        <a href="{{topic.firstPostUrl}}"  data-user-card="{{topic.creator.username}}">{{avatar topic.creator imageSize="large"}}</a>
       {{/if}}
     </div>
     <div class='right'>
